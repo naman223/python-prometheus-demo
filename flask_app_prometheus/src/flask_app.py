@@ -1,12 +1,13 @@
 from flask import Flask, Response
-from helpers.middleware import setup_metrics
 import prometheus_client
+
+from src import middleware
 
 CONTENT_TYPE_LATEST = str('text/plain; version=0.0.4; charset=utf-8')
 
 
 app = Flask(__name__)
-setup_metrics(app)
+middleware.setup_metrics(app)
 
 @app.route('/test/')
 def test():

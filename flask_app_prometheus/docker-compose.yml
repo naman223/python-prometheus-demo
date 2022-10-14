@@ -2,7 +2,7 @@ version: '2'
 
 services:
   webapp:
-    image: amitsaha/flask_app
+    image: flask_app
     container_name: webapp 
     expose:
       - 5000

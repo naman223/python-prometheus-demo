@@ -4,10 +4,10 @@ import time
 import sys
 
 REQUEST_COUNT = Counter(
-    'request_count', 'App Request Count',
+    'naman_request_count', 'App Request Count',
     ['app_name', 'method', 'endpoint', 'http_status']
 )
-REQUEST_LATENCY = Histogram('request_latency_seconds', 'Request latency',
+REQUEST_LATENCY = Histogram('naman_request_latency_seconds', 'Request latency',
     ['app_name', 'endpoint']
 )
 
